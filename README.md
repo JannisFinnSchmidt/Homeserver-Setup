@@ -18,14 +18,14 @@ This machine was set up as a remote desktop server based on Zorin OS designed fo
 ## Key Setup Steps
 
 ### 1. SSH & Security Foundation
-- Firewall Protection: Configured the local firewall (UFW) to allow incoming SSH connections (Port 22).
+- Firewall Protection: Configured the local firewall (UFW) to allow incoming SSH connections.
 - Authentication: Configured SSH keys of Laptop and Server
 - Disabled password authentication and root login, requiring key authentication.
 - Brute-Force Protection: Installed Fail2Ban to automatically detect and temporarily ban IPs after repeated failed login attempts.
 
 ### 2. Network Configuration
 - Port Forwarding: Mapped an external port on the router to the server's internal SSH port.
-- Disabled deep sleep states (S5) and power management restrictions while enabling Wake-on-LAN.
+- Disabled deep sleep states and power management restrictions while enabling Wake-on-LAN.
 - Configured the router to automatically wake the server from standby upon incoming external requests.
 
 ### 3. Remote Desktop Setup (NoMachine)
